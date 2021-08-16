@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+/* 
+  font-family: 'Big Shoulders Display'; 
+    font-family: 'Lexend Deca', sans-serif;
+*/
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-size: 15px;
+}
+.container{
+    max-width: 100%;
+    padding: 10% 20%;
+    /* border: 3px solid red; */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.cards-container{
+    background-color: hsl(0, 0%, 95%) ;
+    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.19);
+    font-family: 'Big Shoulders Display'; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 20%;
+}
+.logo{
+    width: 70px;
+    height: 40px;
+}
+.btns{
+    margin-top: 5em;
+    margin-bottom: 1em;
+    border-radius: 25px;
+    padding: 15px;
+    width: 150px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca';
+    font-weight: 400; 
+    border:none
+}
+.sedans-btn{
+    color:  hsl(31, 77%, 52%);
+}
+.suvs-btn{
+    color: hsl(184, 100%, 22%);;
+}
+.luxury-btn{
+    color:  hsl(179, 100%, 13%);
+}
+.content{
+    /* color: hsl(0, 0%, 95%); */
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+}
+.title{
+    margin: 1em 0em;
+    color: hsl(0, 0%, 95%);
+}
+.cards{
+    padding: 25px;
+    line-height: 1.6em;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sedans{
+    background-color:  hsl(31, 77%, 52%);
+    border-radius: 5px 0px 0px 5px;
+}
+.suvs{
+    background-color:  hsl(184, 100%, 22%);
+    /* min-width: 250px; */
+}
+.luxury{
+    background-color:  hsl(179, 100%, 13%);
+    border-radius: 0px 5px 5px 0px;
+}
+
+@media screen and (max-width: 375px) {
+
+    .content{
+        font-size: 14px;
+    }
+    .title{
+        font-size: 38px;
+    }
+    .cards-container{
+        background-color: hsl(0, 0%, 95%) ;
+        flex-direction: column;
+        padding: 20% 10%;
+    }
+    .btns{
+        margin-top: 2em;
+        width: 130px;
+    }
+    .container{
+        max-width: 100vw;
+        display: flex; 
+        padding: 0 30%;
+    }
+    .sedans{
+        border-radius: 5px 5px 0px 0px;
+    }
+    .luxury{
+        border-radius: 0px 0px 5px 5px;
+    }
+}
+
+@media screen and (min-width: 376px) 
+              and (max-width: 730px)  {
+
+    .cards-container{
+        background-color: hsl(0, 0%, 95%) ;
+        flex-direction: column;
+        padding: 20% 10%;
+    }
+    .sedans{
+        border-radius: 5px 5px 0px 0px;
+    }
+    .luxury{
+        border-radius: 0px 0px 5px 5px;
+    }
+}
+
+@media screen and (min-width: 731px) 
+              and (max-width: 1279px)  {
+
+    .cards{
+        padding: 25px;
+        line-height: 1.6em;
+        width: auto;
+    }
+    .cards-container{
+        background-color: hsl(0, 0%, 95%) ;
+        width: 90vw;
+    }
+}
